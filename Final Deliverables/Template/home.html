@@ -1,0 +1,217 @@
+<!-- main page-->
+
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>MEGH-Hospital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+p{
+	margin-left: 20px;
+}
+body{
+	font-family: montserrat;
+}
+nav{
+	background: blue;
+	height: 100px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 50px;
+	line-height: 100px;
+	padding: 0 100px;
+	font-weight: bold;
+	margin-left: -30px;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 25px;
+	padding: 7px 13px;
+	border-radius:  3px;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 50px;
+		padding-left: 50px;
+		margin-top: 10px;
+	}
+	nav ul li a{
+		font-size: 16px;	
+	}
+}
+@media (max-width:  858px){
+	.checkbtn{
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		width: 100px;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100px;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+	}
+	nav ul li a{
+		margin-top: 20px;
+		font-size: 20px;
+		color: white;
+	}
+	a:hover,a.active{
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked~ul{
+		left:  0;
+	}
+}
+section{
+	background: no-repeat;
+	background-size: cover;
+	height: calc(100vh-100px);
+}
+
+footer{
+    background-color: blue;
+
+}
+footer ul li a{
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+
+}
+img{
+  height: 150vh;
+  width: 215vh; 
+}
+p{
+ color: white;
+ margin-left: 40px;
+ cursor: default;
+ font-size: 20px;
+}
+h6{
+	font-size: 25px;
+	color: white;
+	margin-left: 10px;
+}
+h4{
+    color:black;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: default;
+}
+</style>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ab4d8977-0327-4140-8458-cb674cbf802c", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "3892bc4e-15bd-45c1-8e68-2e97ae75bfc3", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</head>
+<body>
+   <nav>
+   	<input type="checkbox" id="check">
+   	<label for="check" class="checkbtn">
+   		<i class="fas fa-bars"></i>
+   	</label>
+   	
+   	<label class="logo">MEGH Hopital</label>
+      
+   	<ul>
+   		<li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/home.html">Home</a></li>
+   		<li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/login.html">Login</a></li>
+   		<li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/app%20about.html">About</a></li>
+   		<li><a href="#">FAQ's</a></li>
+   	</ul>
+   	
+   </nav>
+   
+   <section> <img src="bgd.png"></section>
+   <section> <img src="bgd1.png"></section>
+   
+   <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+          	<br>
+            <h6>Quick Links</h6>
+            <br>
+            <ul class="footer-links">
+              <li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/home.html">Home</a></li>
+              <li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/login.html">Login</a></li>
+              <li><a href="file:///C:/Users/k%20naveen/Desktop/Project%20code(new)/app%20about.html">About</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">FAQ's</a></li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <br>
+             <p>* “PLASMA DONOR APPLICATION” for getting plasma to the patient. In this application, the patient can find the donor through internet.</p>
+                <p>*If a person has diagnosed with a novel diseases (“CORONA VIRUS or COVID-19”).The Patient will register their details through this internet application.</p>  
+                <p>*It helps the patient easy to apply via phone (a stress free application). The Registration process is very simple method such as user name, date of birth, phone number, age, blood group and nationality. This step involved for the patient. If a person should donate their blood (PLASMA), the person could register through this application.</p>
+                <p>*When the patient blood group and donor blood group is same, the patient can send request to the donor. If the donor accept the request they can contact each other and share their details, suppose the donor will not accept the request the patient can search for another donor</h3>
+                </p>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+</footer>
+</body>
+</html>
